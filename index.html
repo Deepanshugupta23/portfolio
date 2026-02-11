@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Deepanshu Gupta | Frontend Developer</title>
+
+<!-- Bootstrap -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Tailwind -->
+<script src="https://cdn.tailwindcss.com"></script>
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<!-- AOS -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+<style>
+body{font-family:Poppins,sans-serif;transition:background 0.3s;color:inherit;}
+.loader{position:fixed;inset:0;background:#020617;display:flex;align-items:center;justify-content:center;z-index:9999}
+.loader span{width:60px;height:60px;border:6px solid #38bdf8;border-top:6px solid transparent;border-radius:50%;animation:spin 1s linear infinite}
+@keyframes spin{100%{transform:rotate(360deg)}}
+.project-card{transition:.4s}
+.project-card:hover{transform:translateY(-10px) scale(1.05)}
+img.zoom-on-load{transition:transform 0.5s;transform:scale(0.8);}
+img.zoom-on-load.loaded{transform:scale(1);}
+</style>
+</head>
+
+<body class="bg-slate-50 dark:bg-slate-900 dark:text-white">
+
+<!-- Loader -->
+<div class="loader" id="loader"><span></span></div>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg fixed-top bg-white/80 dark:bg-slate-900/80 backdrop-blur shadow">
+<div class="container">
+<a class="navbar-brand fw-bold" href="#">Deepanshu</a>
+<button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav"><span class="navbar-toggler-icon"></span></button>
+<div class="collapse navbar-collapse" id="nav">
+<ul class="navbar-nav ms-auto">
+<li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+<li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+<li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+<li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+<li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+</ul>
+<button id="darkToggle" class="ms-3">🌙</button>
+</div>
+</div>
+</nav>
+
+<!-- Hero Section -->
+<section id="home" class="min-h-screen flex items-center justify-center text-center">
+<div data-aos="zoom-in">
+<img src="DeepanshuGupta.jpg"   alt="Deepanshu Gupta" class="rounded-full mx-auto mb-4 zoom-on-load w-40 h-40 object-cover">
+<h1 class="text-4xl font-bold">Deepanshu Gupta</h1>
+<h2 class="text-xl mt-2">I am <span id="typing" class="text-sky-400"></span></h2>
+<p class="mt-4 max-w-xl mx-auto">Frontend Developer | HTML | CSS | Bootstrap | Tailwind | JavaScript</p>
+<div class="mt-6">
+<a href="#projects" class="btn btn-primary">View Projects</a>
+<a href="Deepanshu Gupta Full Stack Delveoper.pdf" download class="btn btn-outline-secondary ms-2">Download Resume</a>
+</div>
+</div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="py-20 container" data-aos="fade-up">
+<h2 class="text-3xl font-bold text-center mb-6">About Me</h2>
+<p class="text-center max-w-3xl mx-auto">
+I am a fresher Frontend Developer. I completed my B-Tech in CSE in 2023 from Hindustan College of Science & Technology, Farah (Mathura) with 65%. I specialize in building responsive and animated websites with modern frontend technologies.
+</p>
+</section>
+
+<!-- Skills Section -->
+<section id="skills" class="py-20 bg-slate-100 dark:bg-slate-800">
+<div class="container" data-aos="fade-right">
+<h2 class="text-3xl font-bold text-center mb-10">Skills</h2>
+<div class="space-y-4 max-w-xl mx-auto">
+<div><p>HTML</p><div class="bg-gray-300"><div class="bg-sky-400 p-1 text-sm" style="width:90%">90%</div></div></div>
+<div><p>CSS</p><div class="bg-gray-300"><div class="bg-sky-400 p-1 text-sm" style="width:85%">85%</div></div></div>
+<div><p>JavaScript</p><div class="bg-gray-300"><div class="bg-sky-400 p-1 text-sm" style="width:75%">75%</div></div></div>
+<div><p>Bootstrap & Tailwind</p><div class="bg-gray-300"><div class="bg-sky-400 p-1 text-sm" style="width:80%">80%</div></div></div>
+</div>
+</div>
+</section>
+
+<!-- Projects Section -->
+<section id="projects" class="py-20 container">
+<h2 class="text-3xl font-bold text-center mb-10" data-aos="fade-up">Projects</h2>
+<div class="row g-4">
+<div class="col-md-4" data-aos="zoom-in"><div class="p-4 shadow rounded project-card"><h4>Digital Clock</h4><a href="clock.html">View Project</a></div></div>
+<div class="col-md-4" data-aos="zoom-in"><div class="p-4 shadow rounded project-card"><h4>Todo List</h4><a href="todo.html">View Project</a></div></div>
+<div class="col-md-4" data-aos="zoom-in"><div class="p-4 shadow rounded project-card"><h4>Calculator</h4><a href="calculator.html">View Project</a></div></div>
+</div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="py-20 bg-slate-100 dark:bg-slate-800 text-center">
+<h2 class="text-3xl font-bold mb-4">Contact Me</h2>
+
+<div class="mt-4 space-x-4">
+   <a href="https://mail.google.com/mail/?view=cm&fs=1&to=dg232023@gmail.com" target="_blank">
+  <i class="fa-solid fa-envelope"></i>
+</a>
+
+
+    
+    
+<a href="https://github.com/Deepanshugupta23/My-Projects2026" target="_blank"><i class="fab fa-github text-2xl"></i></a>
+<a href="https://www.linkedin.com/in/deepanshu-rider" target="_blank"><i class="fab fa-linkedin text-2xl"></i></a>
+
+</div>
+</section>
+
+<footer class="text-center py-4">© 2026 Deepanshu Gupta</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+AOS.init({once:true});
+window.onload=()=>{
+document.getElementById('loader').style.display='none';
+document.querySelector('.zoom-on-load').classList.add('loaded');
+}
+const roles=['Frontend Developer','UI Designer','JavaScript Enthusiast'];
+let i=0,j=0;const t=document.getElementById('typing');
+function type(){if(j<roles[i].length){t.textContent+=roles[i][j++];setTimeout(type,100)}else setTimeout(erase,1500)}
+function erase(){if(j>0){t.textContent=roles[i].slice(0,--j);setTimeout(erase,50)}else{i=(i+1)%roles.length;setTimeout(type,500)}}
+type();
+document.getElementById('darkToggle').onclick=()=>document.documentElement.classList.toggle('dark');
+</script>
+</body>
+</html>

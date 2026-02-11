@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Calculator</title>
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-900 text-white flex items-center justify-center min-h-screen">
+<div class="text-center">
+<h1 class="text-4xl font-bold mb-4">Calculator</h1>
+<input type="text" id="calc-screen" class="p-2 mb-4 text-black w-64 rounded" disabled>
+<div class="grid grid-cols-4 gap-2 w-64 mx-auto">
+<button class="btn" onclick="press('7')">7</button>
+<button class="btn" onclick="press('8')">8</button>
+<button class="btn" onclick="press('9')">9</button>
+<button class="btn" onclick="press('/')">/</button>
+<button class="btn" onclick="press('4')">4</button>
+<button class="btn" onclick="press('5')">5</button>
+<button class="btn" onclick="press('6')">6</button>
+<button class="btn" onclick="press('*')">*</button>
+<button class="btn" onclick="press('1')">1</button>
+<button class="btn" onclick="press('2')">2</button>
+<button class="btn" onclick="press('3')">3</button>
+<button class="btn" onclick="press('-')">-</button>
+<button class="btn" onclick="press('0')">0</button>
+<button class="btn" onclick="press('.')">.</button>
+<button class="btn" onclick="calculate()">=</button>
+<button class="btn" onclick="press('+')">+</button>
+<button class="col-span-4 btn" onclick="clearScreen()">C</button>
+</div>
+<a href="index.html" class="block mt-6 text-sky-400">← Back to Portfolio</a>
+</div>
+<script>
+const screen=document.getElementById('calc-screen');
+function press(val){screen.value+=val;}
+function calculate(){try{screen.value=eval(screen.value)}catch(e){screen.value='Error';}}
+function clearScreen(){screen.value='';}
+</script>
+<style>
+.btn{background:#38bdf8;color:black;padding:8px;border-radius:4px;font-weight:bold;transition:0.2s;cursor:pointer;}
+.btn:hover{background:#0ea5e9;color:white;}
+</style>
+</body>
+</html>
